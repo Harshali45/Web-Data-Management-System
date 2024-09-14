@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Data Management</title>
+</head>
+<body bgcolor='gold'>
+<!-- Form to Insert Data -->
+<form action="DataHandler" method="post">
+    <h2>Insert Data</h2>
+    <input type="hidden" name="action" value="insert">
+    Account Number: <input type="text" name="id" required><br></br>
+    Account Name: <input type="text" name="name" required><br></br>
+    <input type="submit" value="Insert">
+</form>
+
+<!-- Form to Update Data -->
+<form action="DataHandler" method="post">
+    <h2>Update Data</h2>
+    <input type="hidden" name="action" value="update">
+    Account Number (ID to Update): <input type="text" name="id" required><br></br>
+    New Account Name: <input type="text" name="newName" required><br></br>
+    <input type="submit" value="Update">
+</form>
+
+<!-- Form to Delete Data -->
+<form action="DataHandler" method="post">
+    <h2>Delete Data</h2>
+    <input type="hidden" name="action" value="delete">
+    Account Number (ID to Delete): <input type="text" name="id" required><br></br>
+    <input type="submit" value="Delete">
+</form>
+</body>
+</html>
